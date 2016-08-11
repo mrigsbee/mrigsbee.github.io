@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Megan Rigsbee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  
+    <style>
+        :root {
+            /* block, header, bg, text*/
+            --main-color: #28b78d; 
+            --main-color2: #00688B;
+            --main-color3: #8a949b; 
+            --main-color4: white;
+         
+        }
+
+        body {
+            position: relative;
+            background-color: var(--main-color3);
+        }
+        .affix {
+            top: 20px;
+        }
+
+        #section1 {
+            color: var(--main-color4); 
+            background-color: var(--main-color);
+        }
+        #section2 {
+            color: var(--main-color4);
+            background-color: var(--main-color);
+        }
+        #section3 {
+            color: var(--main-color4); 
+            background-color: var(--main-color);
+        }
+        #section4 {
+            color: var(--main-color4);
+            background-color: var(--main-color);
+        }
+        #section5 {
+            color: var(--main-color4); 
+            background-color: var(--main-color);
+        }
+        #section6 {
+            color: var(--main-color4); 
+            background-color: var(--main-color);
+        }
+
+        @media screen and (max-width: 810px) {
+        #section1, #section2, #section3, #section4, #section5, #section6{
+                margin-left: 150px;
+            }
+        }
+
+        div.box {
+            padding: 10px 25px 10px 25px;
+            margin: 10px;
+        }
+
+        a {
+            color: var(--main-color2);
+        }
+
+        /* Nav-pill colors */
+        .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+            color: var(--main-color4);
+            background-color: var(--main-color2);
+        }
+
+        img.selfie {
+            width:175px;
+            height:auto;
+            display:block;
+            margin-top:35px;
+            margin-bottom:25px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        div.head {
+            margin-top:35px;
+            margin-bottom:35px;
+        }
+
+        .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+            background-color: var(--main-color3); !important;
+            color: var(--main-color2) !important;
+        }
+        
+          
+        /* unvisited link */
+        a:link {
+            color: var(--main-color4);
+        }
+        
+        /* visited link */
+        a:visited {
+            color: var(--main-color4);
+        }
+        
+        /* mouse over link */
+        a:hover {
+            color: var(--main-color4);
+        }
+        
+        /* selected link */
+        a:active {
+            color: var(--main-color4);
+        }
+        .header-style {
+            background-color: var(--main-color2);
+            color:#fff;
+            height:220;
+            border-bottom-width:5px;
+            border-bottom-color:white;
+            border-bottom-style:solid;
+        }
+        
+    </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+
+<!-- HEADER -->
+
+<div class="container-fluid header-style">
+    <div class="row">
+
+        <!-- SELFIE IMAGE -->
+        <div class="col-xs-3 col-md-3">
+            <img src="megan.jpg" class="img-circle selfie">
+        </div>
+
+        <!-- HEADER TEXT --> 
+        <div class="col-xs-7 col-md-7 head">
+            <h1 align="center" style="font-size: 350%">Megan Rigsbee</h1>
+            <p align="center">
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Alexandria, VA <br>
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> mrigsbee@vt.edu <br>
+                <span class="glyphicon glyphicon-link" aria-hidden="true"></span> 
+                  <u><a href="https://github.com/mrigsbee"> https://github.com/mrigsbee</a></u>
+            </p>
+        </div>
+        
+        <!-- BUTTONS --> 
+        <div class="col-xs-2 col-md-2">
+            <button type="button" onclick="photos()" class="btn btn-primary">
+                <span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Photos
+            </button>
+        </div>
+
+    </div> <!-- /row -->
+</div> <!-- /container-fluid -->
+<br>
+
+
+
+<!-- LEFT SIDEBAR -->
+<div class="container" id="resume-body">
+  <div class="row">
+    <nav class="col-xs-3 col-md-3" id="myScrollspy" >
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+        <li><a href="#section1">Education</a></li>
+        <li><a href="#section2">Relevant Courses</a></li>
+        <li><a href="#section3">Technical Skills</a></li>
+        <li><a href="#section4">Related Experience</a></li>
+        <li><a href="#section5">Course Projects</a><li>
+        <li><a href="#section6">Activities</a></li>
+      </ul>
+    </nav>
+
+<!-- RESUME BOXES -->
+<div class="col-xs-9 col-md-9">
+    <div id="section1" class="box">
+        <h1>Education</h1>
+        <hr>
+        <p>
+            <b>B.S. Computer Science</b>, expected May 2017 <br>
+            Virginia Polytechnic Institute and State University, Blacksburg, VA <br>
+            Cumulative <b>GPA: 3.8</b> / 4.0
+        </p>
+    </div>
+    <div id="section2" class="box">
+        <h1>Relevant Courses</h1>
+        <hr>
+        <p>
+            Intro to Human-Computer Interaction<br>
+            Parallel Computation<br>
+            Intermediate Software Design and Engineering<br>
+            Creative Computing Studio  
+        </p>  
+    </div>
+    <div id="section3" class="box">
+        <h1>Technical Skills</h1>
+        <hr>
+        <p>
+            <b>Languages:</b> Java, C<br>
+            <b>Web Development:</b> HTML, CSS, Bootstrap, JavaScript, Servlets, MyBatis, XML, JSP<br>
+            <b>Tools:</b> Eclipse, Autodesk Fusion 360, Maven, BatGen<br>
+            <b>Databases:</b> SQL
+        </p>
+    </div>
+    <div id="section4" class="box">
+        <h1>Related Experience</h1>
+        <hr>
+        <p>
+            <b>SimonComputing</b>, Alexandria, VA<br>
+            <i>Intern</i><br>
+            Worked 40 hours per week for 8 weeks (June - July 2016)<br>
+            <ul>
+                <li> Explored computer and mechanical engineering techniques to build a robotic arm</li>
+                <li> Programmed an arduino to calibrate and safetly ease servo motors in the robotic arm to the correct positions</li>
+                <li> Design a 3D-printed custom string actuated robotic gripper</li>
+                <li> Customized the agile framework to allow for flexible roles in order to stay active while waiting for hardware to arrive</li>
+            </ul>
+            <br>
+
+            <b>SimonComputing</b>, Alexandria, VA<br>
+            <i>Intern</i><br>
+            Worked 40 hours per week for 8 weeks (June - July 2015)<br>
+            <ul>
+                <li> Collaborated with a team of 11 people to design and build an inventory web application</li> 
+                <li> Practiced Agile Development to efficiently build Maven web applications</li>
+                <li> Trained in both front-end and back-end web development</li>
+                <li> Utilized SVN and GitHub to synchronize code</li>
+                <li> Designed an organizational web app designed to track the Agile process</li>
+            </ul>
+            <br>
+
+            <b>Virginia Tech Department of Computer Science</b>, Blacksburg, VA<br>
+            <i>Undergraduate Teacher's Assistant</i><br>
+            Worked 10 hours per week(Spring 2015)<br>
+            <ul>
+                <li> Designed and revised several homework and lab activities for a Data Structures course</li>
+                <li> Provided constructive feedback on colleague’s work</li>
+                <li> Personally created tutorial videos to teach coding and design skills</li>
+                <li> Authored a detailed Java Style Guide as a student reference</li>
+            </ul>
+            <br>
+ 
+    </div>
+    <div id="section5" class="box">
+        <h1>Course Projects</h1>
+        <hr>
+        <p>
+            <b>Memory App</b>, Blacksburg, VA<br>
+            Worked with a team of 3 people (Fall 2014)<br>
+            <ul>
+                <li> Coordinated with a team of 3 people to design and develop an Android app memory game</li>
+                <li> Maintained detailed, organized debugging notes to communicate coding updates to other teammates</li>
+            </ul>
+            <br>
+
+            <b>Remote-controlled Door Unlocker</b>, Blacksburg, VA<br>
+            Worked with a team of 6 people (Spring 2014)<br>
+            <span class="glyphicon glyphicon-link" aria-hidden="true"></span> 
+              <u><a href="http://blogs.lt.vt.edu/enge1104l10t1/project-description/">Project Blog</a></u><br>
+            <ul>
+                <li> Programmed an Arduino microcomputer to unlock a door using a Servo motor</li>
+                <li> Combined computer programming skills and electrical engineering applications to program and construct a remote controlled door unlocking unit</li>
+            </ul>
+            <br>
+    </div>
+    <div id="section6" class="box">
+        <h1>Activities</h1>
+        <hr>
+        <p>
+            <b>Virginia Tech Symphony Band</b><br>
+            <i>Flutist</i><br>
+            Spring 2014 - present<br>
+            <br>
+
+            <b>CS Mentoring Club</b><br>
+            <i>Mentor</i><br>
+            Spring 2016<br>
+            <br>
+
+            <b>Women in Computing Day</b><br>
+            <i>Volunteer</i><br>
+            April 2016<br>
+            <br>
+
+            <b>Computer Science Resources Consortium Career Fair</b><br>
+            <i>Volunteer</i><br>
+            February 2016<br>
+            <br>
+
+            <b>Student Engineer's Council Engineering Expo</b><br> 
+            <i>Volunteer</i><br>
+            September 2013 and 2015<br>
+        </p>
+    </div>
+</div>
+</div>
+</div>
+
+<br>
+
+
+
+
+    <script>
+        function photos() {
+            location.replace("photos.html");
+        }
+    </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="ie10-viewport-bug-workaround.js"></script>-->
+
+</body>
+</html>
+
