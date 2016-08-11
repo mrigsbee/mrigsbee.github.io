@@ -1,0 +1,112 @@
+
+:root {
+    /* block, header, bg, text*/
+    --main-color: #28b78d; 
+    --main-color2: #00688B;
+    --main-color3: #8a949b; 
+    --main-color4: white;
+ 
+}
+
+body {
+    position: relative;
+    background-color: var(--main-color3);
+}
+.affix {
+    top: 45px;
+}
+
+#section1 {
+    color: var(--main-color4); 
+    background-color: var(--main-color);
+}
+#section2 {
+    color: var(--main-color4);
+    background-color: var(--main-color);
+}
+#section3 {
+    color: var(--main-color4); 
+    background-color: var(--main-color);
+}
+#section4 {
+    color: var(--main-color4);
+    background-color: var(--main-color);
+}
+#section5 {
+    color: var(--main-color4); 
+    background-color: var(--main-color);
+}
+#section6 {
+    color: var(--main-color4); 
+    background-color: var(--main-color);
+}
+
+@media screen and (max-width: 810px) {
+#section1, #section2, #section3, #section4, #section5, #section6{
+        margin-left: 150px;
+    }
+}
+
+div.box {
+    padding: 10px 25px 10px 25px;
+    margin: 10px;
+}
+
+a {
+    color: var(--main-color2);
+}
+
+/* Nav-pill colors */
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: var(--main-color4);
+    background-color: var(--main-color2);
+}
+
+img.selfie {
+    width:175px;
+    height:auto;
+    display:block;
+    margin-top:35px;
+    margin-bottom:25px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+div.head {
+    margin-top:35px;
+    margin-bottom:35px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: var(--main-color3); !important;
+    color: var(--main-color2) !important;
+}
+
+  
+/* unvisited link */
+a:link {
+    color: var(--main-color4);
+}
+
+/* visited link */
+a:visited {
+    color: var(--main-color4);
+}
+
+/* mouse over link */
+a:hover {
+    color: var(--main-color4);
+}
+
+/* selected link */
+a:active {
+    color: var(--main-color4);
+}
+.header-style {
+    background-color: var(--main-color2);
+    color:#fff;
+    height:220;
+    border-bottom-width:5px;
+    border-bottom-color:white;
+    border-bottom-style:solid;
+}
